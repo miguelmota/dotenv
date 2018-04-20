@@ -1,4 +1,6 @@
-# dotenv
+# dotenv-override
+
+> it's dotenv, but with the [override feature](https://github.com/motdotla/dotenv/issues/199).
 
 <img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.png" alt="dotenv" align="right" />
 
@@ -71,7 +73,7 @@ _Alias: `load`_
 
 `config` will read your .env file, parse the contents, assign it to
 [`process.env`](https://nodejs.org/docs/latest/api/process.html#process_process_env),
-and return an Object with a `parsed` key containing the loaded content or an `error` key if it failed.  
+and return an Object with a `parsed` key containing the loaded content or an `error` key if it failed.
 
 ```js
 const result = dotenv.config()
@@ -107,6 +109,16 @@ using this option.
 
 ```js
 require('dotenv').config({encoding: 'base64'})
+```
+
+#### Override
+
+Default: `false`
+
+You may allow dotenv to override system wide environment variables in your application.
+
+```js
+require('dotenv').config({override: true})
 ```
 
 ## Parse
