@@ -1,6 +1,6 @@
 # dotenv-override
 
-> it's dotenv, but with the [override feature](https://github.com/motdotla/dotenv/issues/199).
+> It's [dotenv](https://github.com/motdotla/dotenv), but with the [override feature](https://github.com/motdotla/dotenv/issues/199).
 
 <img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.png" alt="dotenv" align="right" />
 
@@ -16,10 +16,10 @@ Dotenv is a zero-dependency module that loads environment variables from a `.env
 
 ```bash
 # with npm
-npm install dotenv
+npm install dotenv-override
 
 # or with Yarn
-yarn add dotenv
+yarn add dotenv-override
 ```
 
 ## Usage
